@@ -7,4 +7,12 @@
         <item value="B09473061A2A8A197B97A3B3EFEE52E1919BA548CC26B785FB7E5F769A7333F0:com.spectrum.cm.headless"/>
         <item value="B09473061A2A8A197B97A3B3EFEE52E1919BA548CC26B785FB7E5F769A7333F0:com.spectrum.cm.croissant.headless"/>
     </string-array>
+    <!-- Match Verizon UW mid-band NR Advanced so Spectrum can show 5G UW -->
+    <!-- Map NR Advanced (connected_mmwave) to 5G+ so SystemUI can show UW -->
+    <string name="5g_icon_configuration_string">connected_mmwave:5G_Plus,connected:5G,connected_rrc_idle:5G,not_restricted_rrc_idle:5G,not_restricted_rrc_con:5G</string>
+    <string name="5g_icon_display_grace_period_string">connected_mmwave,legacy,10;connected_mmwave,any,3;connected,legacy,10</string>
+    <int-array name="additional_nr_advanced_bands_int_array" num="2">
+        <item value="48"/>
+        <item value="77"/>
+    </int-array>
 </carrier_config>
